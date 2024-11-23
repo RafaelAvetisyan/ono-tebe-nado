@@ -15,12 +15,13 @@ main {
     display: grid; 
     grid-template-columns: 1fr min-content 1fr;
     align-items: center; 
-    padding: 92px 51px 89px; 
+    padding: 92px 50px 89px; 
 } 
   
 .header__links-list { 
     display: flex; 
     gap: 32px; 
+    width: 427px;
 } 
  
 .header__link { 
@@ -41,12 +42,13 @@ main {
     display: block;
     justify-self: center;
     align-self: center;
-    width: 140px;
-   
+    width: 148px;
+    height: 105px;
 } 
  
 .header__logo-image { 
     width: 100%; 
+    height: 100%;
 } 
 
 .header__links-list-item {
@@ -60,6 +62,15 @@ main {
 .address { 
    justify-self: end;
    font-style: inherit;
+   width: 240px;
+   height: 98px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   font-family: 'Raleway';
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 24.3px;
 } 
 
 .address_item {
@@ -81,11 +92,14 @@ main {
 /* Заголовок (Cover) */ 
 .cover { 
     position: relative; 
-    padding: 165px 50px 50px 50px; 
+    padding: 165px 50px 51px 50px; 
     background-image: url(../images/cover.jpg); 
     background-repeat: no-repeat; 
     background-size: cover; 
-    
+    height: 757px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 } 
  
 .overlay { 
@@ -111,7 +125,6 @@ main {
     line-height: 1.15; 
     text-transform: uppercase; 
     letter-spacing: 30px;
-    margin-bottom: 100px;
 } 
  
 .aligned-text { 
@@ -143,7 +156,7 @@ main {
     display: flex; 
     justify-content: flex-end; 
     align-items: center; 
-    gap: 78px; 
+    gap: 79px; 
     padding-top: 136px 0 0; 
 } 
  
@@ -153,6 +166,7 @@ main {
     line-height: 1.27; 
     text-transform: uppercase; 
     word-spacing: 18px; 
+    width: 637px;
 } 
 
 .bet-button { 
@@ -214,7 +228,6 @@ main {
     background-size: cover; 
     border-radius: 10px; 
     min-height: 560px; 
-    max-height: 560px;
     width: auto;
     height: 100%;
 } 
@@ -263,6 +276,7 @@ main {
     grid-template-columns: 1fr 1fr 1fr; 
     column-gap: 24px; 
     padding: 0 20px; 
+    height: 595px;
 } 
  
 .about__column { 
@@ -311,16 +325,17 @@ main {
 .footer { 
     display: flex; 
     justify-content: space-between; 
-    padding: 180px 50px 80px; 
+    padding: 180px 50px 88px; 
+    height: 366px;
 } 
  
 .footer__menu-list { 
+    font-size: 18px; 
     list-style: none; 
     text-align: center; 
 } 
  
 .footer__menu-link { 
-    font-size: 18px; 
     line-height: normal;
     text-underline-position: under;
 } 
