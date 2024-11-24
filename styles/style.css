@@ -96,7 +96,7 @@ main {
     background-image: url(../images/cover.jpg); 
     background-repeat: no-repeat; 
     background-size: cover; 
-    height: 757px;
+    min-height: 757px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -276,9 +276,7 @@ main {
 .about { 
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
-    column-gap: 24px; 
     padding: 0 24px; 
-    min-height: 595px;
     margin-top: 146px;
 } 
  
@@ -288,7 +286,10 @@ main {
 } 
  
 .about__column_text { 
-    grid-column: 2 / 4; 
+    display: flex;
+    flex-direction: column;
+    min-width: 693px;
+    margin: 136px 0 0 72px;
 } 
  
 .about__logo { 
@@ -299,6 +300,7 @@ main {
     height: 240px; 
     border-radius: 50%; 
     background-color: #000; 
+    margin: 35px 0 0 47px;
 } 
  
 .about__logo-image { 
@@ -306,18 +308,22 @@ main {
 } 
  
 .about__title { 
-    padding: 100px 0 60px; 
     font-weight: bold; 
     font-size: 40px; 
     line-height: 1; 
     text-transform: uppercase; 
+    margin-bottom: 100px;
 } 
  
 .about__text { 
     display: flex; 
     flex-direction: column; 
-    gap: 25px; 
-    margin-top: 45px;
+    justify-content: space-between;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    min-height: 312px;
 } 
  
 .about__text p { 
